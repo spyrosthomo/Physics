@@ -17,8 +17,8 @@ dp      = 6
 inc.NEQ = 6; NEQ=inc.NEQ
 
 # INPUTS
-inc.k1,inc.k2,inc.k3,inc.k4                   = [float(x) for x in input("Enter coupling constants k1,k2,k3,k4  : \n").split()]
-steps                         = int(               input("Enter number of steps                 : \n"))
+inc.k1,inc.k2,inc.k3,inc.k4                                   = [float(x) for x in input("Enter coupling constants k1,k2,k3,k4  : \n").split()]
+steps                                                         = int(               input("Enter number of steps                 : \n"))
 inc.t0,inc.tf,inc.x10,inc.x20,inc.x30,inc.v10,inc.v20,inc.v30 = [float(x) for x in input("Enter t0,tf, x10,x20,x30, v10,v20,v30 : \n").split()]
 #
 k1=inc.k1; k2=inc.k2; k3=inc.k3; k4=inc.k4
