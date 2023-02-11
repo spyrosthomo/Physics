@@ -67,7 +67,6 @@ print("gtilde", gtilde(x))
 
 #----------------
 G0    = math.pi*Za*Zd*a * math.sqrt(2*mu*u/Q)
-print('go', G0)
 x     = Rsum / b(Q,Za,Zd)
 G     = G0 * gtilde(x)
 #--- 

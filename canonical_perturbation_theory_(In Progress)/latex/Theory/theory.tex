@@ -1,0 +1,94 @@
+\chapter*{Theoretical Introduction}
+
+Canonical Perturbation Theory (CPT) is the theory which helps us understand how perturbations affect the dynamics of a system which is described from an integrable Hamiltonian. So, if we have a certain Hamiltonian which, after a Canonical Transformation, can be broken into a fully integrable part and a non-integrable parte, we can apply CPT and predict how the latter changes the dynamics of the initial system. 
+	\textcolor{red}{MORE ...}
+
+Let's assume that we have an autonomous Hamiltonian $H_0'(\bm{q},\bm{p})$ which fully describes a system via the Hamilton's equations of motion 
+		\begin{subequations}\label{eq1}
+			\begin{alignat}{2}
+				\dot{q_i} =& \pdv{H_0'(\bm{q},\bm{p})}{p_i}\\
+				\dot{p_i} =&-\pdv{H_0'(\bm{q},\bm{p})}{q_i}, i=1,..,n
+			\end{alignat}
+	\end{subequations}
+		
+		
+ 	If we can apply a Canonical Transformation on it which maintains the Hamiltonian character of the system, then we call it a Canonical Transformation. 
+ 	Let's further assume that there are as many constants of motion as degrees of freedom, 2n. This means that exists a Canonical Transformation, $(\bm{q},\bm{p})\rightarrow (\bm{J},\bm{\theta})$, which makes the new generalized position ignorable. That is, the transformed Hamiltonian is not dependent on it, thus $H_0 = H_0(\bm{J})$. These new Canonical Variables are called \textit{Action-Angle Variables}. The system can now be written as 
+ 	\begin{subequations}\label{eq2}
+		\begin{alignat}{2} 
+			\dot{\theta_i} =& \pdv{H_0(\bm{J})}{J_i} \\ 
+			\dot{J_i}      =&-\pdv{H_0(\bm{J})}{\theta_i}, i=1,..,n
+		\end{alignat} 
+	\end{subequations}
+	
+	From the second equation we can easily obtain that the \textit{Action} is constant for all degrees of freedom, $J_i =\alpha_i$. \textcolor{red}{From the first, we can deduce the the derivative of the \textit{Angle} is constant,} thus the solution of the system is 
+	\begin{subequations}\label{eq3}
+		\begin{alignat}{2}
+			\theta_i =& \omega_{0,i} \cdot t + \theta_0 \\ 
+			J_i      =& \alpha_i
+		\end{alignat}
+	\end{subequations}
+ 	where $\omega_{0,i} = \partial(H_0(\bm{J})/\partial{J_i}$	
+	Now, we can see that the new variable $\bm{\theta}$ is named \textit{Angle} on purpose since, from equation (1a), it can be interpreted as a periodic phase with different frequency for each degree of freedom $\bm{\omega} = (\omega_{0,1},..,\omega_{o,n})$.
+	If we transform back to the initial variables $(\bm{J},\bm{\theta})\rightarrow(\bm{q},\bm{p})$ we have the solution of the initial system.
+	
+	However convenient it seems, the above case is, firstly extremely rare and secondly extremely sensitive. Say for example that the Hamiltonian models a real mechanical system. That system is naturally prone to imperfections which will destroy its integrable character and as a result we will not be able to apply the above method of Canonical Transformation to Action-Angle variables in order to find the solution. Or we may want to increase our system's energy, so we have to impose an external periodic stimulation.
+	All these doesn't mean that we are unable to study the new \textit{perturbed} system.
+	
+	The new system is now described by a Hamiltonian $H'(\bm{q},\bm{p},t)$. Due to the fact that it deviates only a little from the initial one, it can be written as 
+		\begin{equation}\label{eq4}
+			H'(\bm{q},\bm{p},t) = H_0'(\bm{q},\bm{p}) + \epsilon H_1'(\bm{q},\bm{p},t) 
+		\end{equation}
+	
+	Where, $H_0'$ is our integrable Hamiltonian and $H_1'$ is the non-integrable perturbation. So, if we apply the same Canonical Transformation as before, the new Hamiltonian, H, can be written as 
+		\begin{equation}
+			H(\bm{J},\bm{\theta},t) = H_0(\bm{J}) + \epsilon H_1(\bm{J},\bm{\theta},t)
+		\end{equation}
+	
+	Our goal now is to transform the new Hamiltonian in order to push the $\bm{\theta},t$ dependence to higher order $\epsilon ^2$. In that way, we will have an approximately integrable Hamiltonian to the first order and we will be able to solve it. 
+	
+	\subsection*{Canonical Transformation}
+	
+	The aforementioned transformation, $(\bm{J},\bm{\theta})\rightarrow(\bm{\bar{J}},\bm{\bar{\theta}})$ should as well maintain the Hamiltonian structure of our system, so that the new variables $(\bm{\bar{J}},\bm{\bar{\theta}})$ are Canonical Variables.
+	
+	The new Hamiltonian is $\bar{H} = \bar{H}(\bm{\bar{J}},\bm{\bar{\theta}})$. Both the new and the old Hamiltonians should obey the Hamilton's variational principle 
+	\begin{align}\label{eq6}
+		\left\{
+		\begin{matrix}
+				\delta\int_{t_1}^{t_2}\left( J_i \dot{\theta_i} - H(\bm{J},\bm{\theta},t)\right)dt =& 0\\
+				 \delta\int_{t_1}^{t_2}\left( \bar{J}_i \dot{\bar{\theta}}_i - \bar{H}(\bm{\bar{J}},\bm{\bar{\theta}},t)\right)dt =& 0
+		\end{matrix}  \right\}\Rightarrow \nonumber \\
+		J_i \dot{\theta}_i - H(\bm{J},\bm{\theta},t) =\bar{J}_i \dot{\bar{\theta}}_i - \bar{H}(\bm{\bar{J}},\bm{\bar{\theta}},t) + \odv{F(\bm{J},\bm{\theta},\bm{\bar{J}},\bm{\bar{\theta}},t)}{t} 
+	\end{align}
+	
+	The F function is called as the \textit{Generating Function} of the transformation. That means that it uniquely defines the transformation. Say that we want it to be dependent only on the old Angles and the new Actions,$F(\bm{\theta},\bm{\bar{J}},t)$. Our goal is to solve (\ref{eq6}) for the other two variables, $\bm{\bar{\theta}},\bm{J}$. We have  
+	
+		\begin{align*}
+			J_i\dot{\theta_i}- H(\bm{J},\bm{\theta},t) =\bar{J}_i \dot{\bar{\theta}}_i - \bar{H}(\bm{\bar{J}},\bm{\bar{\theta}},t) + \dot{\theta_i}\pdv{F}{\theta_i} + \dot{\bar{J}}_i\pdv{F}{\bar{J}_i} + \pdv{F}{t}
+		\end{align*}
+	
+	We see that there is no way to get rid of the unwanted term (1st on RHS). For that reason, we have to add one arbitrary term to the generating function which will cancel with the $J_i\dot{\bar{\theta}}_i$. Our generating function will be 
+		\begin{align}
+			F(\bm{J},\bm{\theta},\bm{\bar{J}},\bm{\bar{\theta}},t) = -\bar{J}_i\bar{\theta}_i + S(\bm{\theta},\bm{\bar{J}},t)
+		\end{align}
+	
+	Now, equation (\ref{eq6}) can be written as 
+		\begin{align}
+			J_i\dot{\theta_i}- H(\bm{J},\bm{\theta},t) =&\cancel{\bar{J}_i \dot{\bar{\theta}}_i} - \bar{H}(\bm{\bar{J}},\bm{\bar{\theta}},t) + \dot{\theta_i}\pdv{S}{\theta_i} + \dot{\bar{J}}_i\pdv{S}{\bar{J}_i} +\pdv{S}{t} - \dot{\bar{J}}_i\bar{\theta}_i - \cancel{\bar{J}_i\dot{\bar{\theta}}_i } \Rightarrow \nonumber\\
+			%
+			\textcolor{red}{J_i\dot{\theta_i}}- \textcolor{blue}{H(\bm{J},\bm{\theta},t)} =	&- \textcolor{blue}{\bar{H}(\bm{\bar{J}},\bm{\bar{\theta}},t)} +  \textcolor{red}{\dot{\theta_i}\pdv{S}{\theta_i}} + 			\textcolor{green}{\dot{\bar{J}}_i\pdv{S}{\bar{J}_i}} + \textcolor{blue}{\pdv{S}{t}} - \textcolor{green}{\dot{\bar{J}}_i\bar{\theta}_i} \Rightarrow \nonumber\\ 
+%
+		\end{align}				
+	So we obatin 
+	\begin{subequations}\label{eq3}
+			\begin{alignat}{3}
+							J_i            =& \partial{S}/\partial{\theta_i}
+							\vspace{0.4cm} \\ \vspace{0.4cm} 
+							\bar{\theta}_i =& \partial{S}/\partial{\bar{J}_i}\\
+							\bar{H}        =& H + \partial{S}/\partial{t}
+			\end{alignat}
+	\end{subequations}			
+	So now we know how each variable can be obtained by the generating function $S=S(\bm{\theta},\bar{\bm{J}},t)$. It is clear that S uniquely defines the transformation and if it is equal to $S = \theta_i\bar{J}_i$, it represents the \textit{identity transformation}, since it leaves both $\bm{J}$ and $\bm{\theta}$ unchanged.
+	\subsection*{Time Dependent Perturbation Theory}
+\end{document}
+ 	
