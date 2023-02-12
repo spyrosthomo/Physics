@@ -24,7 +24,12 @@
 #--------------------------------------------------
 def m(t, x, dt):
     '''One step forward of rk4 method  '''
-    import const_Bz_E as der
+    #import double_pen as der  #const_Bz_E as der - hoc  - g_field
+    #----------
+    import importlib
+    import inc
+    der  = importlib.import_module(inc.syst)
+    #----------
     h  = dt
     h2 = 0.5*h
     h6 = h/6.0
