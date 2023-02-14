@@ -41,7 +41,7 @@ Let's assume that we have an autonomous Hamiltonian $H_0'(\bm{q},\bm{p})$ which 
 		\end{equation}
 	
 	Where, $H_0'$ is our integrable Hamiltonian and $H_1'$ is the non-integrable perturbation. So, if we apply the same Canonical Transformation as before, the new Hamiltonian, H, can be written as 
-		\begin{equation}
+		\begin{equation}\label{eq5}
 			H(\bm{J},\bm{\theta},t) = H_0(\bm{J}) + \epsilon H_1(\bm{J},\bm{\theta},t)
 		\end{equation}
 	
@@ -80,7 +80,7 @@ Let's assume that we have an autonomous Hamiltonian $H_0'(\bm{q},\bm{p})$ which 
 %
 		\end{align}				
 	So we obatin 
-	\begin{subequations}\label{eq3}
+	\begin{subequations}\label{eq9}
 			\begin{alignat}{3}
 							J_i            =& \partial{S}/\partial{\theta_i}
 							\vspace{0.4cm} \\ \vspace{0.4cm} 
@@ -90,5 +90,47 @@ Let's assume that we have an autonomous Hamiltonian $H_0'(\bm{q},\bm{p})$ which 
 	\end{subequations}			
 	So now we know how each variable can be obtained by the generating function $S=S(\bm{\theta},\bar{\bm{J}},t)$. It is clear that S uniquely defines the transformation and if it is equal to $S = \theta_i\bar{J}_i$, it represents the \textit{identity transformation}, since it leaves both $\bm{J}$ and $\bm{\theta}$ unchanged.
 	\subsection*{Time Dependent Perturbation Theory}
+	
+		We want to study a system described by (\ref{eq5}). An integrable system $H_0$ plus an non-integrable one $H_1$ which acts as a perturbation on the first. More specificaly, what we want to do is to move the $\bm{\bar{\theta}}$ dependence of $\bar{H_1}$, to higher order utilizing a Canonical Transformation $(\bm{J},\bm{\theta})\rightarrow (\bm{\bar{J}}, \bm{\bar{\theta}})$. 
+		
+		Since the non-integrable part is a perturbation, we can deduce that the generating function of the wanted trasformation will be nearly identical, with a non-identical first order part: 
+		\begin{align}\label{eq10}
+			S(\bm{\theta},\bm{\bar{J}},t) = \bar{J}_i\theta_i + \epsilon S_1(\bm{\theta},\bar{\bm{J}},t) 
+		\end{align}
+	%
+		From (\ref{eq9}) we have 
+			\begin{subequations}\label{eq11}
+					\begin{alignat}{3}
+						J_i  =& \bar{J}_i + \epsilon\pdv{S_1}{\theta_i} \\ 
+			  \bar{\theta}_i =& \theta_i + \epsilon\pdv{S_1}{\bar{J}_i} \\  	  \bar{H}(\bm{\bar{J}},\bm{\bar{\theta}},t) =& H(\bm{J},\bm{\theta},t) + \epsilon\pdv{S_1}{t}
+					\end{alignat}
+			\end{subequations}	
+	So we see that for the zero-th order approximation, the new and the old variables are the same. For the Hamiltonian, we substitute (\ref{eq11}a), (\ref{eq11}b) into (\ref{eq11}c) and we have\\
+	\vdots \\
+	\textcolor{red}{ WRITE THE TAYLOR EXPANSION FOR THE HAMILTONIAN AND THEN SEPARATE THE ORDERS AND DERIVE EQNS 12}\\
+	\vdots
+	%
+	%	:) Taylor 
+	%
+	
+	\begin{align*}
+		\bar{H}(\bm{\bar{J}},\bm{\bar{\theta}},t) =& H(\bm{J}(\bm{\bar{J}},\bm{\bar{\theta}},t), \bm{\theta}(\bm{\bar{J}},\bm{\bar{\theta}},t),t) + \epsilon \pdv{S_1}{t} \xRightarrow{(\ref{eq11}a,b)} \\ 
+		=& H_0(\bm{J}(\bm{\bar{J}},\bm{\bar{\theta}},t)) + \epsilon H_1(\bm{J}(\bm{\bar{J}},\bm{\bar{\theta}},t), \bm{\theta}(\bm{\bar{J}},\bm{\bar{\theta}},t),t)  +\pdv{S_1}{t} \xRightarrow{(\ref{eq11}a)}\\
+		 =&  H_0\left(\bm{\bar{J}} + \epsilon\pdv{S_1}{\bm{\theta}}\right) + \epsilon H_1(\bm{J}(\bm{\bar{J}},\bm{\bar{\theta}},t), \bm{\theta}(\bm{\bar{J}},\bm{\bar{\theta}},t),t)  +\pdv{S_1}{t} \Rightarrow\\  			    
+	\end{align*}		
+	
+	\begin{subequations}%\label{eq12}
+			\begin{alignat}{3}
+				(\epsilon^0):\hspace{0.5cm} \bar{H}_0 =&  \bar{H_0}(\bm{\bar{J}}) = H_0(\bm{\bar{J}}) \\ 
+				(\epsilon^1):\hspace{0.5cm} \bar{H}_1 =&  \bar{H_1}(\bm{\bar{J}},\bm{\bar{\theta}},t) = %
+				H_1(\bm{J}(\bm{\bar{J}},\bm{\bar{\theta}},t), \bm{\theta}(\bm{\bar{J}},\bm{\bar{\theta}},t),t) + \pdv{S_1}{t} \Rightarrow \nonumber \\
+					=& H_1(\bar{\bm{J}}, \bar{\bm{\theta}}, t) + \pdv{S_1}{t}
+			\end{alignat}
+	\end{subequations}	
+	
+	Now we have to find which $S_1$ suits to continue our study, since it defines uniquely the transformation. First of all, if we identify $\bm{\theta}$ as a phase, then $H_1$ has to be a periodic function with respect to $\bm{\theta}$ with period $T_{\theta_i} = 2\pi$. We also want time periodicity, with period $T_t = 2\pi/\Omega$.
+	
+	Since both $H_1$ and $\bar{H_1}$ are periodic with respect to both \textit{Angle} and time, from equation (\ref{eq12}b) we have that $S_1$ should also have the same periodicity. 
+	
 \end{document}
  	
