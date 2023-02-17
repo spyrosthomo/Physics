@@ -105,32 +105,89 @@ Let's assume that we have an autonomous Hamiltonian $H_0'(\bm{q},\bm{p})$ which 
 			  \bar{\theta}_i =& \theta_i + \epsilon\pdv{S_1}{\bar{J}_i} \\  	  \bar{H}(\bm{\bar{J}},\bm{\bar{\theta}},t) =& H(\bm{J},\bm{\theta},t) + \epsilon\pdv{S_1}{t}
 					\end{alignat}
 			\end{subequations}	
-	So we see that for the zero-th order approximation, the new and the old variables are the same. For the Hamiltonian, we substitute (\ref{eq11}a), (\ref{eq11}b) into (\ref{eq11}c) and we have\\
-	\vdots \\
-	\textcolor{red}{ WRITE THE TAYLOR EXPANSION FOR THE HAMILTONIAN AND THEN SEPARATE THE ORDERS AND DERIVE EQNS 12}\\
-	\vdots
+	So we see that for the zero-th order approximation, the new and the old variables are the same. As for the Hamiltonian, we substitute (\ref{eq11}a), (\ref{eq11}b) into (\ref{eq11}c) and we have
+%	\vdots \\
+%	\textcolor{red}{ WRITE THE TAYLOR EXPANSION FOR THE HAMILTONIAN AND THEN SEPARATE THE ORDERS AND DERIVE EQNS 12}\\
+%	\vdots
 	%
 	%	:) Taylor 
-	%
-	
+	%	
 	\begin{align*}
 		\bar{H}(\bm{\bar{J}},\bm{\bar{\theta}},t) =& H(\bm{J}(\bm{\bar{J}},\bm{\bar{\theta}},t), \bm{\theta}(\bm{\bar{J}},\bm{\bar{\theta}},t),t) + \epsilon \pdv{S_1}{t} \xRightarrow{(\ref{eq11}a,b)} \\ 
-		=& H_0(\bm{J}(\bm{\bar{J}},\bm{\bar{\theta}},t)) + \epsilon H_1(\bm{J}(\bm{\bar{J}},\bm{\bar{\theta}},t), \bm{\theta}(\bm{\bar{J}},\bm{\bar{\theta}},t),t)  +\pdv{S_1}{t} \xRightarrow{(\ref{eq11}a)}\\
-		 =&  H_0\left(\bm{\bar{J}} + \epsilon\pdv{S_1}{\bm{\theta}}\right) + \epsilon H_1(\bm{J}(\bm{\bar{J}},\bm{\bar{\theta}},t), \bm{\theta}(\bm{\bar{J}},\bm{\bar{\theta}},t),t)  +\pdv{S_1}{t} \Rightarrow\\  			    
+		=& H_0(\bm{J}(\bm{\bar{J}},\bm{\bar{\theta}},t)) + \epsilon H_1(\bm{J}(\bm{\bar{J}},\bm{\bar{\theta}},t), \bm{\theta}(\bm{\bar{J}},\bm{\bar{\theta}},t),t)  \epsilon+\pdv{S_1}{t} \xRightarrow{(\ref{eq11}a)}\\
+		 =&  H_0\left(\bm{\bar{J}} + \epsilon\pdv{S_1}{\bm{\theta}}\right) + \epsilon H_1(\bm{J}(\bm{\bar{J}},\bm{\bar{\theta}},t), \bm{\theta}(\bm{\bar{J}},\bm{\bar{\theta}},t),t)  +\epsilon\pdv{S_1}{t} \xRightarrow{Taylor, up\hspace{0.1cm}to\hspace{0.1cm} (\epsilon^1)}\\  			
+		 =& H_0(\bm{\bar{J}}) + \epsilon \pdv{S_1}{\bm{\theta}} \pdv{H_0(\bm{\bar{J}})}{\bm{\bar{J}}} + \epsilon H_1(\bm{\bar{J}},\bm{\bar{\theta}},t) +\epsilon \pdv{S_1}{t}
 	\end{align*}		
+	%
+	So, if we separate the above equation into $0^{th}$ and $1^{st}$ orders, we have
 	
-	\begin{subequations}%\label{eq12}
+	\begin{subequations}\label{eq12}
 			\begin{alignat}{3}
 				(\epsilon^0):\hspace{0.5cm} \bar{H}_0 =&  \bar{H_0}(\bm{\bar{J}}) = H_0(\bm{\bar{J}}) \\ 
-				(\epsilon^1):\hspace{0.5cm} \bar{H}_1 =&  \bar{H_1}(\bm{\bar{J}},\bm{\bar{\theta}},t) = %
-				H_1(\bm{J}(\bm{\bar{J}},\bm{\bar{\theta}},t), \bm{\theta}(\bm{\bar{J}},\bm{\bar{\theta}},t),t) + \pdv{S_1}{t} \Rightarrow \nonumber \\
-					=& H_1(\bar{\bm{J}}, \bar{\bm{\theta}}, t) + \pdv{S_1}{t}
+				(\epsilon^1):\hspace{0.5cm} \bar{H}_1 =&  \bar{H_1}(\bm{\bar{J}},\bm{\bar{\theta}},t)  \Rightarrow \nonumber \\
+					=& H_1(\bar{\bm{J}}, \bar{\bm{\theta}}, t) + \pdv{S_1}{\bm{\theta}}\cdot \bm{\omega_0}(\bm{\bar{J}})+ \pdv{S_1}{t}
 			\end{alignat}
 	\end{subequations}	
+	%
+	Where 
+		\begin{align}\label{eq13}
+			\bm{\omega_0}(\bm{\bar{J}}) = \pdv{H_0(\bm{\bar{J}})}{\bm{\bar{J}}}
+		\end{align}
+	Now we have to find which $S_1$ suits us to continue our study, since it defines uniquely the transformation. First of all, if we identify $\bm{\theta}$ as a phase, then $H_1$ has to be a periodic function with respect to $\bm{\theta}$ with period5 $T_{\theta_i} = 2\pi$. We also want time periodicity, with period $T_t = 2\pi/\Omega$.% If the perturbation was not periodic, and say
+	%
+	Since both $H_1$ and $\bar{H_1}$ are periodic with respect to both \textit{Angle} and \textit{time}, from equation (\ref{eq12}b) we have that $S_1$ should also be a periodic function of \textit{Angle} and \textit{time}
 	
-	Now we have to find which $S_1$ suits to continue our study, since it defines uniquely the transformation. First of all, if we identify $\bm{\theta}$ as a phase, then $H_1$ has to be a periodic function with respect to $\bm{\theta}$ with period $T_{\theta_i} = 2\pi$. We also want time periodicity, with period $T_t = 2\pi/\Omega$.
+	Until now, we have two solid points from which we can continue. Firstly, the periodicity of $H_1$ and $S_1$ and secondly, the fact that we know how to solve integrable systems (with \textit{Angle and time} independent Hamiltonian).
+	The above points lead respectively to the Fourier expansion of $H_1$ and $S_1$ and the need to make $\bar{H_1}$ \textit{approximately integrable} (if we could make it exactly integrable we wouldn't need CPT :) ). 	
+	The latter requires a subtle, yet extremely useful trick which will lead to the choice of $S_1$ by connecting it with $H_1$. 
 	
-	Since both $H_1$ and $\bar{H_1}$ are periodic with respect to both \textit{Angle} and time, from equation (\ref{eq12}b) we have that $S_1$ should also have the same periodicity. 
+	To be more specific, the trick is as simple as separating $H_1$ into two parts;a mean value with respect to both \textit{Angle and time} plus an oscillating part
+	\begin{equation}\label{eq14}
+		H_1 = \langle H_1 \rangle_{\bm{\bar{\theta}}, t} + \{H_1\}_{\bm{\bar{\theta}}, t} 
+	\end{equation}
+	%
+Now, if we substitute into (\ref{eq12}b) we have 
+	\begin{align}\label{eq15}
+		 \bar{H_1} =& H_1(\bar{\bm{J}}, \bar{\bm{\theta}}, t) + \pdv{S_1}{\bm{\theta}}\cdot \bm{\omega_0}(\bm{\bar{J}})+ \pdv{S_1}{t} \Rightarrow\nonumber\\
+		  		  =& \langle H_1 \rangle_{\bm{\bar{\theta}}, t}(\bar{\bm{J}}) + \{H_1\}_{\bm{\bar{\theta}}, t}(\bar{\bm{J}}, \bar{\bm{\theta}}, t) + \pdv{S_1}{\bm{\theta}}\cdot \bm{\omega_0}(\bm{\bar{J}})+ \pdv{S_1}{t}
+	\end{align}
 	
+	Here is the crucial point where we will \textit{"push"} the $\bm{\theta}-t$ dependence to higher orders and at the same time we define the Canonical Transformation by defining its gerating function $S_1$. Since we can arbitrarily choose $S_1$, we choose it in order to satisfy the following relation
+	\begin{equation}\label{eq16}
+		\{H_1\}_{\bm{\bar{\theta}}, t}(\bar{\bm{J}}, \bar{\bm{\theta}}, t) + \pdv{S_1}{\bm{\theta}}\cdot \bm{\omega_0}(\bm{\bar{J}})+ \pdv{S_1}{t} = 0
+	\end{equation}	
+We finally have that 
+	\begin{align}\label{eq17}
+		\bar{H} =&  \bar{H_0} + \epsilon\bar{H_1}  \Rightarrow\nonumber\\
+				=& H_0(\bar{\bm{J}}) + \epsilon\langle H_1 \rangle_{\bm{\bar{\theta}}, t}(\bar{\bm{J}}) 
+	\end{align}
+which is dependent (approximately) only on $\bar{\bm{J}}$ and is an integrable (approximately) Hamiltonian.
+
+There is only one step left to complete the theory. That is to determine $S_1$ by writing it as a Fourier sum and obtaining the coefficients from (\ref{eq16}). The Fourier series of $\{H_1\}_{\bm{\bar{\theta}},t}$\footnotemark and $S_1$
+	\footnotetext{The function $\{H_1\}_{\bm{\bar{\theta}},t}$ has no constant part as we have taken out of it as a mean value at (\ref{eq14}). This means that we will not start the Fourier sum from 0.}
+	
+\begin{subequations}\label{eq18}
+		\begin{alignat}{2}	
+		\{H_1\}_{\bm{\bar{\theta}},t}(\bm{\bar{J}}) =& \sum_{\bm{l},m\neq0}^\infty H_{1,\bm{l},m} \cdot e^{i(\bm{l}\cdot\bm{\theta}+m\Omega t)} \\ 
+		S_1                           =& \sum_{\bm{l},m\neq0}^\infty S_{1,\bm{l},m} \cdot e^{i(\bm{l}\cdot\bm{\theta}+m\Omega t)} 
+		\end{alignat}
+\end{subequations}	
+%
+We substitute (\ref{eq18}) into (\ref{eq16}) and we have 
+	\begin{align}\label{eq19} 
+			\sum_{\bm{l},m\neq0}^\infty \left( H_{1,\bm{l},m} \cdot 
+			e^{i(\bm{l}\cdot\bm{\theta}+m\Omega t)} + \bm{\omega_0}(\bm{\bar{J}})\cdot i\bm{l} \cdot S_{1,\bm{l},m} \cdot e^{i(\bm{l}\cdot\bm{\theta}+m\Omega t)} +
+			im\Omega S_{1,\bm{l},m} \cdot e^{i(\bm{l}\cdot\bm{\theta}+m\Omega t)}\right) =& 0 \Rightarrow \nonumber \\ 
+			%
+			\sum_{\bm{l},m\neq0}^\infty \left(  H_{1,\bm{l},m} + i\left(\bm{\omega_0}(\bm{\bar{J}})\cdot \bm{l}  + m\Omega\right)\cdot S_{1,\bm{l},m}  
+					\right)e^{i(\bm{l}\cdot\bm{\theta}+m\Omega t)} =& 0  \xRightarrow{\forall\hspace{0.05cm}\bm{l},m\neq0} \nonumber \\
+					S_{1,\bm{l},m} =  i\frac{H_{1,\bm{l},m}}{\bm{\omega_0}(\bm{\bar{J}})\cdot \bm{l} + m\Omega}&
+	\end{align}
+%
+Now, the transformation is fully defined by equations (\ref{eq18}b) and (\ref{eq19}) and our job is just to find the Fourier coefficients of $H_1$.
+	\begin{equation}
+		S_1 = \sum_{\bm{l},m\neq0}^\infty i\frac{H_{1,\bm{l},m}}{\bm{\omega_0}(\bm{\bar{J}})\cdot \bm{l} + m\Omega} \cdot e^{i(\bm{l}\cdot\bm{\theta}+m\Omega t)} 
+	\end{equation}
+
 \end{document}
  	
