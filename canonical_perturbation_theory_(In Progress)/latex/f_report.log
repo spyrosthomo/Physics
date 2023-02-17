@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.12)  17 FEB 2023 16:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.12)  17 FEB 2023 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**solution.tex
-(./solution.tex
+**f_report.tex
+(./f_report.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
@@ -965,9 +965,9 @@ LaTeX Font Info:    Trying to load font information for T1+qbk on input line 10
 
 (/usr/share/texmf/tex/latex/tex-gyre/t1qbk.fd
 File: t1qbk.fd 2009/09/25 v1.2 font definition file for T1/qbk
-) (./solution.aux
-(./Theory/theory.aux))
-\openout1 = `solution.aux'.
+)
+No file f_report.aux.
+\openout1 = `f_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
 LaTeX Font Info:    ... okay on input line 105.
@@ -986,7 +986,6 @@ LaTeX Font Info:    ... okay on input line 105.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 105.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 1
 05.
-
 (/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
@@ -1131,12 +1130,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 105.
 LaTeX Info: Redefining \pageref on input line 105.
 LaTeX Info: Redefining \nameref on input line 105.
-
-(./solution.out) (./solution.out)
 \@outlinefile=\write3
-\openout3 = `solution.out'.
+\openout3 = `f_report.out'.
 
- (./Front_Page/front.tex
+
+(./Front_Page/front.tex
 <Front_Page/logo1.png.png, id=4, 290.08376pt x 91.34125pt>
 File: Front_Page/logo1.png.png Graphic file (type png)
 <use Front_Page/logo1.png.png>
@@ -1204,6 +1202,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 
+LaTeX Warning: Reference `eq6' on page 4 undefined on input line 64.
+
+
+LaTeX Warning: Reference `eq6' on page 4 undefined on input line 75.
+
+
+LaTeX Warning: Reference `eq5' on page 4 undefined on input line 94.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
@@ -1212,6 +1219,45 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [4]
+
+LaTeX Warning: Reference `eq9' on page 5 undefined on input line 101.
+
+
+LaTeX Warning: Reference `eq11' on page 5 undefined on input line 108.
+
+
+LaTeX Warning: Reference `eq11' on page 5 undefined on input line 108.
+
+
+LaTeX Warning: Reference `eq11' on page 5 undefined on input line 108.
+
+
+LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
+
+
+LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
+
+
+LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
+
+
+LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
+
+
+LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
+
+
+LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
+
+
+LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
+
+
+LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
+
+
+LaTeX Warning: Reference `eq12' on page 5 undefined on input line 138.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1222,6 +1268,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
+LaTeX Warning: Reference `eq12' on page 6 undefined on input line 149.
+
+
+LaTeX Warning: Reference `eq16' on page 6 undefined on input line 166.
+
+
+LaTeX Warning: Reference `eq14' on page 6 undefined on input line 167.
+
+
+LaTeX Warning: Reference `eq18' on page 6 undefined on input line 176.
+
+
+LaTeX Warning: Reference `eq16' on page 6 undefined on input line 176.
+
+
+LaTeX Warning: Reference `eq18' on page 6 undefined on input line 187.
+
+
+LaTeX Warning: Reference `eq19' on page 6 undefined on input line 187.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
@@ -1229,22 +1296,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6] (./solution.aux (./Theory/theory.aux))
+[6] (./f_report.aux (./Theory/theory.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `solution.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+LaTeX Warning: There were undefined references.
+
+
+Package rerunfilecheck Warning: File `f_report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `f_report.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) )
 (\end occurred when \iftrue on line 120 was incomplete)
 (\end occurred when \ifx on line 120 was incomplete)
 (\end occurred when \ifnum on line 120 was incomplete) 
 Here is how much of TeX's memory you used:
- 19455 strings out of 478287
- 346956 string characters out of 5849288
- 736093 words of memory out of 5000000
- 37271 multiletter control sequences out of 15000+600000
- 523395 words of font info for 90 fonts, out of 8000000 for 9000
+ 19443 strings out of 478287
+ 346850 string characters out of 5849288
+ 735326 words of memory out of 5000000
+ 37267 multiletter control sequences out of 15000+600000
+ 535615 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,20n,78p,579b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/e
@@ -1269,10 +1345,10 @@ usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1200.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/shar
 e/texmf/fonts/type1/public/tex-gyre/qbkb.pfb></usr/share/texmf/fonts/type1/publ
 ic/tex-gyre/qbkr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qbkri.pfb>
-Output written on solution.pdf (6 pages, 309585 bytes).
+Output written on f_report.pdf (6 pages, 309684 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
+ 202 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
  45 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
