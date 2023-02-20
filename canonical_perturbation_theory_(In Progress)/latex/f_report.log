@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.12)  17 FEB 2023 16:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.12)  20 FEB 2023 18:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -947,12 +947,6 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count354
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-)
-(/usr/share/texmf/tex/latex/tex-gyre/tgbonum.sty
-Package: tgbonum 2009/09/27 v1.2 TeX Gyre Bonum as default roman family
-)
 \c@problem=\count355
 \c@definition=\count356
 \c@properties=\count357
@@ -960,13 +954,12 @@ Package: tgbonum 2009/09/27 v1.2 TeX Gyre Bonum as default roman family
 \c@protash=\count359
 \c@porisma=\count360
 \c@lemma=\count361
-LaTeX Font Info:    Trying to load font information for T1+qbk on input line 10
-5.
 
-(/usr/share/texmf/tex/latex/tex-gyre/t1qbk.fd
-File: t1qbk.fd 2009/09/25 v1.2 font definition file for T1/qbk
-)
-No file f_report.aux.
+
+LaTeX Warning: Unused global option(s):
+    [floatperchapter].
+
+(./f_report.aux (./Theory/theory.aux) (./Hamiltonian_1/ham01.aux))
 \openout1 = `f_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
@@ -986,6 +979,7 @@ LaTeX Font Info:    ... okay on input line 105.
 LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 105.
 LaTeX Font Info:    Trying to load font information for LGR+cmr on input line 1
 05.
+
 (/usr/share/texlive/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
@@ -1054,14 +1048,14 @@ File: alphabeta-lgr 2020/09/25 1.0 Composite definitions for 8-bit TeX
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(59.75095pt, 478.00598pt, 59.75095pt)
+* h-part:(L,W,R)=(73.97733pt, 449.55322pt, 73.97733pt)
 * v-part:(T,H,B)=(68.28644pt, 708.47397pt, 68.28644pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=478.00598pt
+* \textwidth=449.55322pt
 * \textheight=708.47397pt
-* \oddsidemargin=-12.51904pt
-* \evensidemargin=-12.51904pt
+* \oddsidemargin=1.70734pt
+* \evensidemargin=1.70734pt
 * \topmargin=-35.85735pt
 * \headheight=12.0pt
 * \headsep=19.8738pt
@@ -1130,12 +1124,13 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 105.
 LaTeX Info: Redefining \pageref on input line 105.
 LaTeX Info: Redefining \nameref on input line 105.
+
+(./f_report.out) (./f_report.out)
 \@outlinefile=\write3
 \openout3 = `f_report.out'.
 
-
-(./Front_Page/front.tex
-<Front_Page/logo1.png.png, id=4, 290.08376pt x 91.34125pt>
+ (./Front_Page/front.tex
+<Front_Page/logo1.png.png, id=24, 290.08376pt x 91.34125pt>
 File: Front_Page/logo1.png.png Graphic file (type png)
 <use Front_Page/logo1.png.png>
 Package pdftex.def Info: Front_Page/logo1.png.png  used on input line 7.
@@ -1144,26 +1139,6 @@ Package pdftex.def Info: Front_Page/logo1.png.png  used on input line 7.
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
-
-
-LaTeX Font Warning: Font shape `T1/qbk/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/qbk/m/it' tried instead on input line 10.
-
-
-LaTeX Font Warning: Font shape `T1/qbk/m/sl' in size <14.4> not available
-(Font)              Font shape `T1/qbk/m/it' tried instead on input line 10.
-
-
-LaTeX Font Warning: Font shape `T1/qbk/m/sl' in size <12> not available
-(Font)              Font shape `T1/qbk/m/it' tried instead on input line 11.
-
-LaTeX Font Info:    Trying to load font information for LGR+qbk on input line 1
-9.
-LaTeX Font Info:    No file LGRqbk.fd. on input line 19.
-
-LaTeX Font Warning: Font shape `LGR/qbk/m/n' undefined
-(Font)              using `LGR/cmr/m/n' instead
-(Font)              for symbol `textTheta' on input line 19.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
 
@@ -1185,170 +1160,84 @@ File: uesint.fd
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Front_Page/logo1.png.png
->])
+>]) [2]
+(./f_report.toc)
+\tf@toc=\write4
+\openout4 = `f_report.toc'.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[2]
-\openout2 = `Theory/theory.aux'.
-
- (./Theory/theory.tex [3
-
+ [3
 
 ]
+\openout2 = `Theory/theory.aux'.
 
-LaTeX Warning: Reference `eq6' on page 4 undefined on input line 64.
-
-
-LaTeX Warning: Reference `eq6' on page 4 undefined on input line 75.
-
-
-LaTeX Warning: Reference `eq5' on page 4 undefined on input line 94.
+ (./Theory/theory.tex
+Chapter 1.
+[4
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+] [5] [6]
+Overfull \hbox (1.22652pt too wide) detected at line 187
+[]
+ []
 
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+[7]
+<Theory/poin.png, id=148, 954.56625pt x 645.41125pt>
+File: Theory/poin.png Graphic file (type png)
+<use Theory/poin.png>
+Package pdftex.def Info: Theory/poin.png  used on input line 210.
+(pdftex.def)             Requested size: 286.37209pt x 193.62486pt.
+) [8 <./Theory/poin.png>]
+\openout2 = `Hamiltonian_1/ham01.aux'.
 
-[4]
-
-LaTeX Warning: Reference `eq9' on page 5 undefined on input line 101.
-
-
-LaTeX Warning: Reference `eq11' on page 5 undefined on input line 108.
-
-
-LaTeX Warning: Reference `eq11' on page 5 undefined on input line 108.
-
-
-LaTeX Warning: Reference `eq11' on page 5 undefined on input line 108.
+ (./Hamiltonian_1/ham01.tex
+Chapter 2.
+) [9
 
 
-LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
 
 
-LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
-
-
-LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
-
-
-LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
-
-
-LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
-
-
-LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
-
-
-LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
-
-
-LaTeX Warning: Reference `eq11' on page 5 undefined on input line 120.
-
-
-LaTeX Warning: Reference `eq12' on page 5 undefined on input line 138.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[5]
-
-LaTeX Warning: Reference `eq12' on page 6 undefined on input line 149.
-
-
-LaTeX Warning: Reference `eq16' on page 6 undefined on input line 166.
-
-
-LaTeX Warning: Reference `eq14' on page 6 undefined on input line 167.
-
-
-LaTeX Warning: Reference `eq18' on page 6 undefined on input line 176.
-
-
-LaTeX Warning: Reference `eq16' on page 6 undefined on input line 176.
-
-
-LaTeX Warning: Reference `eq18' on page 6 undefined on input line 187.
-
-
-LaTeX Warning: Reference `eq19' on page 6 undefined on input line 187.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[6] (./f_report.aux (./Theory/theory.aux))
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package rerunfilecheck Warning: File `f_report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `f_report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
- ) )
-(\end occurred when \iftrue on line 120 was incomplete)
-(\end occurred when \ifx on line 120 was incomplete)
-(\end occurred when \ifnum on line 120 was incomplete) 
+] (./f_report.aux (./Theory/theory.aux) (./Hamiltonian_1/ham01.aux))
+Package rerunfilecheck Info: File `f_report.out' has not changed.
+(rerunfilecheck)             Checksum: 212D14256590E6E6A4E6EAF748538793;893.
+ ) 
 Here is how much of TeX's memory you used:
- 19443 strings out of 478287
- 346850 string characters out of 5849288
- 735326 words of memory out of 5000000
- 37267 multiletter control sequences out of 15000+600000
- 535615 words of font info for 94 fonts, out of 8000000 for 9000
+ 19258 strings out of 478287
+ 345614 string characters out of 5849288
+ 736532 words of memory out of 5000000
+ 37058 multiletter control sequences out of 15000+600000
+ 485338 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,20n,78p,579b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/e
-nc/dvips/tex-gyre/q-ec.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cmextra/cmmib6.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1200.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/shar
-e/texmf/fonts/type1/public/tex-gyre/qbkb.pfb></usr/share/texmf/fonts/type1/publ
-ic/tex-gyre/qbkr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qbkri.pfb>
-Output written on f_report.pdf (6 pages, 309684 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cme
+xtra/cmmib6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmex
+tra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsl9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/esint-type1/esint1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1200.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on f_report.pdf (9 pages, 364837 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 298 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

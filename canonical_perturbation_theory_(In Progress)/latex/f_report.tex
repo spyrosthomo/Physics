@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt]{book}
+\documentclass[a4paper,11pt, floatperchapter]{book}
 
 \usepackage{alphabeta} 
 \usepackage{enumitem} 
@@ -7,7 +7,7 @@
 \usepackage{amsthm}
 \usepackage{cancel} 
 \usepackage[margin=0.70in]{geometry} 
-\geometry{left=2.1cm,right=2.1cm,top=2.4cm,bottom=2.4cm}	%the p1age geometry as defined, A4=210x297mm
+\geometry{left=2.6cm,right=2.6cm,top=2.4cm,bottom=2.4cm}	%the p1age geometry as defined, A4=210x297mm
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage[center]{caption}
@@ -41,15 +41,6 @@
 
 \bibliographystyle{abbrvnat}
 
-%-----------------------------------------
-%       FONT CHANGE 
-%-----------------------------------------
-\usepackage[T1]{fontenc}
-\usepackage{tgbonum}  
-
-% lmodern tgbonum tgtermes
-
-%^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 %%RENEW
@@ -70,27 +61,32 @@
 \newtheorem*{examples}{Παραδείγματα}
 
 
-%\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
 %\renewcommand{\labelenumi}{\roman{enumi}}
 \newcommand{\approxtext}[1]{\ensuremath{\stackrel{\text{#1}}{\approx}}}
-%\renewcommand{\figurename}{Εικόνα.}
-%\renewcommand{\tablename}{Πίνακας.}
+\renewcommand{\tablename}{Πίνακας.}
 %\renewcommand\refname{New References Header}
 %\renewcommand*\contentsname{Περιεχόμενα}
 %\DeclareDerivative{\odv}{\mathrm{d}}
-%\renewcommand*\bibname{Βιβλιογραφία}
 
 
- 
+
 \title{Study of a non-Autonomous Hamiltonian with Canonical Perturbation Theory}
 \author{Θωμόπουλος Σπυρίδων}
 
 \titleformat{\chapter}[hang]{\normalfont\huge\bfseries\color{black}}{\thechapter}{1cm}{}{}
 %
+\newcommand{\changefont}{%
+    \fontsize{9}{11}\selectfont
+}
+\fancyhf{}
+\fancyhead[LE,RO]{\changefont \slshape \rightmark} %section
+\fancyhead[RE,LO]{\changefont \slshape \leftmark} %chapter
+\fancyfoot[C]{\changefont \thepage} %footer
 \pagestyle{fancy}
+%\fancyhead[L]{\fontsize{10}{12} \selectfont Personal Statement}
 %\fancyhead{}
 \fancyfoot{}
-%\fancyhead[LO,LE]{\textbf{Πείραμα STAR}}
 \fancyfoot[CE,CO]{\thepage}
 
 
@@ -101,12 +97,16 @@
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist
 
+%========= no-numbers
+\setcounter{secnumdepth}{0}
+\setcounter{chapter}{0}
+%==============
 
 \begin{document}
 \input{Front_Page/front.tex}
-%\mainmatter 
-
+	
 \begin{changemargin}{2cm}{2cm} 
+
 	\section*{Abstract} 
 		This project was done as part of the class "Complex Dynamics of Hamiltonian Systems \& Applications" and it it about the study of a nearly non-integrable Hamiltonian 
 		using Canonical Perturbation Theory. 
@@ -114,8 +114,16 @@
 \end{changemargin}
 
 
-%\tableofcontents
-%\let\cleardoublepage\clearpage
 
+\tableofcontents
+\let\cleardoublepage\clearpage
+
+%=========================================================================
+%        Theoretical Introduction 
+%=========================================================================
 \include{Theory/theory.tex}
+%=========================================================================
+%        Hamiltonian - 1 
+\include{Hamiltonian_1/ham01.tex}
+%==========================================================================
 \end{document}

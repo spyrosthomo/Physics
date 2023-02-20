@@ -1,0 +1,21 @@
+\chapter{Non-autonomous Hamiltonian }
+%\addcontentsline{toc}{chapter}{Non-autonomous Hamiltonian }
+
+We will use the above theory which was developed for systems with n degrees of freedom, in order to study the following Hamiltonian system with one degree of freedom 
+	\begin{equation}\label{eq2.1}
+		H(J,\theta,t) = \bar{\omega}J + J^k + V_1cos(n_1\theta-m_1\Omega t) + V_2cos(n_2\theta-m_2\Omega t)
+	\end{equation} 
+	%
+It is obvious that it can be written as the sum of an integrable and a non-integrable Hamiltonian
+	\begin{subequations}\label{eq2.2}
+			\begin{alignat}{2}
+				H_0 =& \bar{\omega}J + J^k\\
+				H_1 =& V_1cos(n_1\theta-m_1\Omega t) + V_2cos(n_2\theta-m_2\Omega t)
+			\end{alignat}
+	\end{subequations}	
+	%
+This means that if we "turn off" the non-integrable part by setting $V_1=V_2=0$, we can easily find the frequency from the Hamilton's equation of motion for the generalized position
+	\begin{align*}\label{eq2.3}
+		\omega_0(J) =& \dot{\theta} = \pdv{H_0}{J} \Rightarrow\\
+			     =& \bar{\omega} + k J^{k-1} \numberthis
+	\end{align*}
