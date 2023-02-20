@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.12)  20 FEB 2023 18:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.12)  21 FEB 2023 00:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1191,23 +1191,53 @@ Package pdftex.def Info: Theory/poin.png  used on input line 210.
 
  (./Hamiltonian_1/ham01.tex
 Chapter 2.
-) [9
+[9
 
 
 
 
-] (./f_report.aux (./Theory/theory.aux) (./Hamiltonian_1/ham01.aux))
+]
+Overfull \hbox (0.44678pt too wide) in paragraph at lines 60--75
+[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--75
+
+ []
+
+
+Overfull \hbox (0.44678pt too wide) in paragraph at lines 75--76
+| 
+ []
+
+
+Overfull \hbox (17.44678pt too wide) in paragraph at lines 95--95
+[][]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--95
+
+ []
+
+
+Overfull \hbox (0.44678pt too wide) in paragraph at lines 95--105
+| 
+ []
+
+[10]) [11] (./f_report.aux (./Theory/theory.aux) (./Hamiltonian_1/ham01.aux))
 Package rerunfilecheck Info: File `f_report.out' has not changed.
 (rerunfilecheck)             Checksum: 212D14256590E6E6A4E6EAF748538793;893.
  ) 
 Here is how much of TeX's memory you used:
- 19258 strings out of 478287
- 345614 string characters out of 5849288
- 736532 words of memory out of 5000000
- 37058 multiletter control sequences out of 15000+600000
+ 19282 strings out of 478287
+ 345839 string characters out of 5849288
+ 737090 words of memory out of 5000000
+ 37068 multiletter control sequences out of 15000+600000
  485338 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,20n,78p,579b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,20n,78p,579b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texli
@@ -1234,10 +1264,10 @@ cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/esint-type1/esint1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1200.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on f_report.pdf (9 pages, 364837 bytes).
+Output written on f_report.pdf (11 pages, 377158 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 218 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
+ 348 PDF objects out of 1000 (max. 8388607)
+ 251 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
