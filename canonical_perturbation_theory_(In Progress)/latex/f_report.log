@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.12)  21 FEB 2023 00:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.12)  25 FEB 2023 00:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,13 +1048,13 @@ File: alphabeta-lgr 2020/09/25 1.0 Composite definitions for 8-bit TeX
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(73.97733pt, 449.55322pt, 73.97733pt)
+* h-part:(L,W,R)=(71.13188pt, 452.39867pt, 73.97733pt)
 * v-part:(T,H,B)=(68.28644pt, 708.47397pt, 68.28644pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=449.55322pt
+* \textwidth=452.39867pt
 * \textheight=708.47397pt
-* \oddsidemargin=1.70734pt
+* \oddsidemargin=-1.1381pt
 * \evensidemargin=1.70734pt
 * \topmargin=-35.85735pt
 * \headheight=12.0pt
@@ -1175,12 +1175,7 @@ Chapter 1.
 [4
 
 
-] [5] [6]
-Overfull \hbox (1.22652pt too wide) detected at line 187
-[]
- []
-
-[7]
+] [5] [6] [7]
 <Theory/poin.png, id=148, 954.56625pt x 645.41125pt>
 File: Theory/poin.png Graphic file (type png)
 <use Theory/poin.png>
@@ -1197,47 +1192,67 @@ Chapter 2.
 
 
 ]
-Overfull \hbox (0.44678pt too wide) in paragraph at lines 60--75
-[]| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--75
+Underfull \hbox (badness 10000) in paragraph at lines 61--76
 
  []
 
 
-Overfull \hbox (0.44678pt too wide) in paragraph at lines 75--76
-| 
- []
-
-
-Overfull \hbox (17.44678pt too wide) in paragraph at lines 95--95
+Overfull \hbox (14.60133pt too wide) in paragraph at lines 96--96
 [][]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--95
+Underfull \hbox (badness 10000) in paragraph at lines 96--96
 
  []
 
-
-Overfull \hbox (0.44678pt too wide) in paragraph at lines 95--105
-| 
+[10]
+Overfull \hbox (49.56998pt too wide) detected at line 185
+[]
  []
 
-[10]) [11] (./f_report.aux (./Theory/theory.aux) (./Hamiltonian_1/ham01.aux))
+
+Overfull \hbox (14.60133pt too wide) in paragraph at lines 195--195
+[][]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--195
+
+ []
+
+[11]
+Overfull \hbox (13.7483pt too wide) detected at line 224
+[]
+ []
+
+
+Overfull \hbox (29.6047pt too wide) detected at line 231
+[]
+ []
+
+
+Overfull \hbox (14.60133pt too wide) in paragraph at lines 243--243
+[][]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--243
+
+ []
+
+[12]) [13] (./f_report.aux (./Theory/theory.aux) (./Hamiltonian_1/ham01.aux))
 Package rerunfilecheck Info: File `f_report.out' has not changed.
 (rerunfilecheck)             Checksum: 212D14256590E6E6A4E6EAF748538793;893.
  ) 
 Here is how much of TeX's memory you used:
- 19282 strings out of 478287
- 345839 string characters out of 5849288
- 737090 words of memory out of 5000000
- 37068 multiletter control sequences out of 15000+600000
+ 19296 strings out of 478287
+ 345929 string characters out of 5849288
+ 737292 words of memory out of 5000000
+ 37074 multiletter control sequences out of 15000+600000
  485338 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,20n,78p,579b,420s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,20n,78p,579b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texli
@@ -1264,10 +1279,10 @@ cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/esint-type1/esint1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cbfonts/grmn1200.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on f_report.pdf (11 pages, 377158 bytes).
+Output written on f_report.pdf (13 pages, 386709 bytes).
 PDF statistics:
- 348 PDF objects out of 1000 (max. 8388607)
- 251 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 374 PDF objects out of 1000 (max. 8388607)
+ 275 compressed objects within 3 object streams
+ 79 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

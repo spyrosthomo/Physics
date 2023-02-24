@@ -50,12 +50,13 @@ If we substitute (\ref{eq2.4}) and (\ref{eq2.6}) into the condition (\ref{eq16})
 		\sum_i\left( V_i - m_i\Omega S_{1,i}-n_iS_{1,i}\omega_0\right)cos(n_i\theta-m_i\Omega t) =0 \Rightarrow\\ 
 	\end{align*}
 We want it to hold $\forall i=\{1,2\}$
-	\begin{align}\label{eq2.7}
+	\begin{align*}%\label{eq2.7}
 		S_{1,i} = \frac{V_i}{m_i\Omega + n_i(\bar{\omega}+kJ^{k-1})}, i=1,2
-	\end{align}
+	\end{align*}
 	%
 So, for each term of the expansion, we have resonance for the values for which the denominator is zero 
-	\begin{align}\label{eq2.8}
+	\begin{align}\label{eq2.7}
+		m_i\Omega + n_i(\bar{\omega}+kJ^{k-1}) = 0\Rightarrow\nonumber\\
 		J_{res,i}^{k-1} = - \frac{m_i\Omega + n_i\bar{\omega}}{kn_i}
 	\end{align}
 %
@@ -75,10 +76,10 @@ So, for each term of the expansion, we have resonance for the values for which t
 }
 
 Also, we can compute the approximate (up to first order) constant of motion $\bar{J}$ from (\ref{eq11}a)
-	\begin{align*}
+	\begin{align*}\label{eq2.8}
 		\bar{J} =& J - \pdv{S_1}{\theta} \Rightarrow\\ 
 		        =& J - \sum_{i=1,2}S_{1,i}n_i cos(n_i\theta-m_i\Omega t)\Rightarrow\\ 
-		        =& J - \frac{V_1n_1}{m_1\Omega + n_1(\bar{\omega}+kJ^{k-1})}cos(n_1\theta-m_1\Omega t) -\frac{V_2n_2}{m_2\Omega + n_2(\bar{\omega}+kJ^{k-1})} cos(n_2\theta-m_2\Omega t)
+		        =& J - \frac{V_1n_1}{m_1\Omega + n_1(\bar{\omega}+kJ^{k-1})}cos(n_1\theta-m_1\Omega t) -\frac{V_2n_2}{m_2\Omega + n_2(\bar{\omega}+kJ^{k-1})} cos(n_2\theta-m_2\Omega t)\numberthis
 	\end{align*}
 
 
@@ -101,7 +102,7 @@ Also, we can compute the approximate (up to first order) constant of motion $\ba
 %
 %
 %
-If we take either $V_1=0$ or $V_2=0$, then can change the postion variable with the transformation 
+If we take either $V_1=0$ or $V_2=0$, then we can change the postion variable with the transformation 
 	\begin{align}\label{eq2.9}
 		\hat{\theta} = n_i\theta-m_i\Omega t, \text{\hspace{.3cm}$i=$1 or 2}
 	\end{align}
@@ -109,7 +110,7 @@ But if we want to use a Canonical Transformation, we can also choose
 	\begin{align}\label{eq2.10}
 		\hat{J} = \alpha J 
 	\end{align}
-where $\alpha$ is to be determined. In order to demand a Canonical Transformation and by doing so to find $\alpha$, we can use the \textit{symplectic condition} $\tilde{\bm{M}}\bm{J}\bm{M} = \bm{J}$, where $\bm{M}$ is the Jacobian of the transofrmation, or the \textit{Poisson Bracket Condition}, $[\hat{\theta},\hat{J}]=1$, or directly find a generating function. 
+where $\alpha$ is to be determined. In order to demand a Canonical Transformation and by doing so, to find $\alpha$, we can use the \textit{symplectic condition} $\tilde{\bm{M}}\bm{J}\bm{M} = \bm{J}$, where $\bm{M}$ is the Jacobian of the transofrmation, or the \textit{Poisson Bracket Condition}, $[\hat{\theta},\hat{J}]=1$, or directly find a generating function. 
 
 	We will use the \textit{Poisson Bracket Condition} in order to determine $\alpha$ and then we will find the generating function of the transformation.
 	If we want the transformation to be Canonical, then the following condtion must hold 
@@ -150,4 +151,117 @@ And since it depends on $\hat{\theta}$, it is not integrable, but again, it can 
 Where $S_1$ is the same as the one we calculated (\ref{eq2.6}) for the full Hamiltonian (both $V_1,V_2\neq0$) without the one sine term, thus 
 	\begin{align*}
 		\hat{\bar{J}} = \hat{J} - \frac{V_i}{m_i\Omega-n_i(\bar{\omega}+k\hat{J}^{k-1})}cos\hat{\theta} , \text{\hspace{.6cm}$i=$1 or 2}   \numberthis
+	\end{align*}
+	%
+	The \textit{resonance Action} can be obtain if we set the above denominator equal to zero
+		\begin{align*}\label{eq2.16}
+			m_i\Omega-n_i(\bar{\omega}+k\hat{J_{res}}^{k-1})=0 \Rightarrow\\
+			\hat{J}_{res}^{k-1} = \frac{m_i\Omega-n_i\bar{\omega}}{n_ik}\numberthis
+		\end{align*}
+	%
+	If we expand our Hamiltonian (\ref{eq2.14}) around $\hat{J}_{res}$, we have 
+		\begin{align*}\label{eq2.17}
+			\hat{H}\simeq&  \hat{H}(\hat{J}_{res}) + 
+					\left. \pdv{\hat{H}}{\hat{J}}\right|_{\hat{J}_{res}}(\hat{J}-\hat{J}_{res}) +
+					 \left. \pdv[order=2]{\hat{H}}{\hat{J}}\right|_{\hat{J}_{res}}(\hat{J}-\hat{J}_{res})^2 + O(\epsilon^2)\Rightarrow\\
+	%---------				 
+	% 1st term			
+			=&	\left[(\bar{\omega}n_i-m_i\Omega )\hat{J}_{res} + n_i^k\hat{J}_{res}^k +V_icos\hat{\theta} \right]+ 
+	% 2nd term 
+			   \left[ (\bar{\omega}-m_i\Omega) + kn_i^k\hat{J}_{res}^{k-1}\right]( \hat{J}-\hat{J}_{res}) + \\
+	% 3rd term 
+			&\text{\hspace{2cm}} +\left[  k(k-1)\hat{J}_{res}^{k-1} \right](\hat{J}-\hat{J}_{res})^2 \Rightarrow\\
+			=& \textcolor{red}{n_i^k\hat{J}_{res}^{k}}+V_icos\hat{\theta} +
+			 	\textcolor{green}{(\bar{\omega}n_i-m_i\Omega)\hat{J}}+ 
+			 \textcolor{green}{kn_i^k\hat{J}_{res}^{k-1}\hat{J}}-\textcolor{red}{kn_i^k\hat{J}_{res}^k}
+			+ 1/2k(k-1)n_i^k\hat{J}_{res}^{k-2}\hat{J}^2+\\
+			&\text{\hspace{2cm}} +\textcolor{red}{1/2k(k-1)n_i^k\hat{J}_{res}^k}-\textcolor{green}{k(k-1)n_i^k\hat{J}_{res}^{k-1}\hat{J}}\Rightarrow\\
+			%
+			%
+			=& \left(1-k+\frac{1}{2}k(k-1)\right)n_i^k\hat{J}_{res}^{k} +
+			 \left( \bar{\omega}n_i-m_i\Omega + kn_i^k\hat{J}_{res}^{k-1}-k(k-1)n_i^k\hat{J}_{res}^{k-1}\right)\hat{J} +
+			  \frac{1}{2}k(k-1)n_i^k\hat{J}_{res}^{k-2} \hat{J}^2+\\
+			&\text{\hspace{2cm}} +V_icos\hat{\theta}	 \numberthis
+		\end{align*} 
+
+
+%
+\textcolor{red}{
+\line(1,0){450}\\
+\begin{center}
+	\textbf{QUESTION 4}
+\end{center}
+\line(1,0){450}\\
+}
+%
+%
+%========================================================================
+% 4ρδ Q
+%========================================================================
+%
+%
+
+\section*{Removal of Resonances}
+	When we are near the resonance regions, among others, we have the problem that our new approximate constant of motion $\bar{J}$ not only is not constant, but it goes to infinity ( we can see this from (\ref{eq2.8} ). So we want to construct a true approximate constant of motion which does not go to infinity. 
+	Any function of the "constant" $\bar{J}$ is going to be a constant, so let's assume the our new constant is $I(\bar{J})$.
+	Then we can use its Taylor expansion and (\ref{eq11}a)
+		\begin{align*}\label{eq2.18}
+			I(\bar{J}) =& I\left(J-\epsilon \pdv{S_1}{\theta}\right) \Rightarrow\\
+					   =& I(J) - \epsilon\pdv{S_1}{\theta}\odv{I}{J}\numberthis
+		\end{align*}
+%
+	We have not yet solved the problem. We see that the term $\partial{S_1}/\partial{\theta}$ that goes to infity still exists in our relation. But now, since I is an arbitrary function of $\bar{J}$, we can choose it in a way that it cancels that second term at resonances. That is 
+		\begin{align*}\label{eq2.19}
+			\left.\odv{I}{J}\right|_{resonances} = 0 \numberthis
+		\end{align*}
+Since the conditions for the resonances are given by (\ref{eq2.7}), the condition for vanishing the unwanted term from $I(\bar{J})$ is 
+	\begin{align*}\label{eq2.20}
+		\odv{I}{J} =& \prod_{i=1,2}C_i\left(m_i\Omega + n_i(\bar{\omega}+kJ^{k-1})\right)\Rightarrow\\
+		            =&C_1C_2\left(m_1\Omega + n_1(\bar{\omega}+kJ^{k-1})\right)\left(m_2\Omega + n_2(\bar{\omega}+kJ^{k-1})\right) \Rightarrow\\ 
+		            =&C_1C_2 \left( (m_1\Omega + n_1\bar{\omega})(m_2\Omega + n_2\bar{\omega})+  \left[n_1(m_2\Omega + n_2\bar{\omega}))+ n_2(m_1\Omega + n_1 \bar{\omega})\right]J^{k-1}
+		            +
+		         n_1n_1J^{2k-2}    \right) \numberthis
+	\end{align*}
+	%
+	So, we have that 
+	\begin{align*}\label{eq2.21}
+		I(J) = C_1C_2 \left( (m_1\Omega + n_1\bar{\omega})(m_2\Omega + n_2\bar{\omega})J + \left[n_1(m_2\Omega + n_2\bar{\omega}))+ n_2(m_1\Omega + n_1 \bar{\omega})\right]\frac{J^{k}}{k}
+		            +
+		         n_1n_1\frac{J^{2k-2}}{2k-1}    \right) \numberthis
+	\end{align*}		
+%
+If we combline (\ref{eq2.21}) \& (\ref{eq2.20}) with (\ref{eq2.18}) we obtain the new constant of motion which does not go to infinity at the resonances.
+
+
+%
+\textcolor{red}{
+\line(1,0){450}\\
+\begin{center}
+	\textbf{QUESTION 5}
+\end{center}
+\line(1,0){450}\\
+}
+%
+%
+%========================================================================
+% 5ρδ Q
+%========================================================================
+%
+%
+
+
+We will now study numerically the Hamiltonian (\ref{eq2.1}) and we will compare the numerical with the analytical results. In order to do that, we will construct its Poincare Map. In order to do that, we will have to solve numerically the following Hamilton's equations of motion
+	\begin{align*}
+	\left\{
+		\begin{matrix}
+			\dot{\theta} =& \pdv{H}{J     }  \vspace{0.3cm}\\
+			\dot{J     } =& -\pdv{H}{\theta}
+		\end{matrix}  \right. \Rightarrow \\
+	\end{align*}\vspace{-1.2cm}
+	\begin{align*}
+		\left\{
+		\begin{matrix}
+			\dot{\theta} =& \bar{\omega} + kJ^{k-1} \\
+			\dot{J     } =& V_1n_1sin(n_1\theta-m_1\Omega t) + V_2n_2sin(n_2\theta-m_2\Omega t)
+		\end{matrix}  \right.
 	\end{align*}
