@@ -25,7 +25,7 @@ The non integrable part can be written as a sum of mean value and an oscillating
 	\end{align*}
 But since it is a periodic function with respect to $\theta, t$, we have 
 	\begin{align*}
-		\langle H_1 \rangle_{\theta,t}
+		\langle H_1 \rangle_{\theta,t} =0
 	\end{align*}
 and since it is already a sum of cosine functions we will not use the Fourier expansion (\ref{eq18}a) but the following 
 	\begin{align}\label{eq2.4}
@@ -102,7 +102,7 @@ Also, we can compute the approximate (up to first order) constant of motion $\ba
 %
 %
 %
-If we take either $V_1=0$ or $V_2=0$, then we can change the postion variable with the transformation 
+If we take either $V_1=0$ or $V_2=0$, then we can change the position variable with the transformation 
 	\begin{align}\label{eq2.9}
 		\hat{\theta} = n_i\theta-m_i\Omega t, \text{\hspace{.3cm}$i=$1 or 2}
 	\end{align}
@@ -134,7 +134,7 @@ And for J
 n_i\hat{J} =& n_i\hat{J}+f'(\theta) \Rightarrow\\ 
 		 f(\theta) =& const.				
 	\end{align*}
-So, we can ignore $f(\theta)$ since in our transformation appears only as a derivative. Finally, the generating function is 
+So, we can ignore $f(\theta)$ since in our transformation it appears only as a derivative. Finally, the generating function is 
 	\begin{equation}\label{eq2.13}
 		F_2(\theta,\hat{J}) = (n_i\theta - m_i\Omega t)\hat{J}, \text{\hspace{.3cm}$i=$1 or 2}
 	\end{equation}
@@ -146,43 +146,55 @@ The new Hamiltonian, according to (\ref{eq9}c) is
 	\end{align*}
 And since it depends on $\hat{\theta}$, it is not integrable, but again, it can been seen as a sum of an integrable and a non-integrable perturbation. So, from CPT and (\ref{eq11}a), the first order approximation of the new \textit{Action}, is 
 	\begin{align*}
-		\hat{\bar{J}} = \hat{J} - \pdv{S_1}{\hat{\theta} }
+		\hat{\bar{J}} = \hat{J} - \epsilon\pdv{S_1}{\hat{\theta} }
 	\end{align*}
 Where $S_1$ is the same as the one we calculated (\ref{eq2.6}) for the full Hamiltonian (both $V_1,V_2\neq0$) without the one sine term, thus 
 	\begin{align*}
-		\hat{\bar{J}} = \hat{J} - \frac{V_i}{m_i\Omega-n_i(\bar{\omega}+k\hat{J}^{k-1})}cos\hat{\theta} , \text{\hspace{.6cm}$i=$1 or 2}   \numberthis
+		\hat{\bar{J}} = \hat{J} - \epsilon\frac{V_i}{m_i\Omega-n_i(\bar{\omega}+k\hat{J}^{k-1})}cos\hat{\theta} , \text{\hspace{.6cm}$i=$1 or 2}   \numberthis
 	\end{align*}
 	%
-	The \textit{resonance Action} can be obtain if we set the above denominator equal to zero
+	The \textit{resonance Action} can be obtained if we set the above denominator equal to zero
 		\begin{align*}\label{eq2.16}
 			m_i\Omega-n_i(\bar{\omega}+k\hat{J_{res}}^{k-1})=0 \Rightarrow\\
 			\hat{J}_{res}^{k-1} = \frac{m_i\Omega-n_i\bar{\omega}}{n_ik}\numberthis
 		\end{align*}
 	%
-	If we expand our Hamiltonian (\ref{eq2.14}) around $\hat{J}_{res}$, we have 
-		\begin{align*}\label{eq2.17}
-			\hat{H}\simeq&  \hat{H}(\hat{J}_{res}) + 
-					\left. \pdv{\hat{H}}{\hat{J}}\right|_{\hat{J}_{res}}(\hat{J}-\hat{J}_{res}) +
-					 \left. \pdv[order=2]{\hat{H}}{\hat{J}}\right|_{\hat{J}_{res}}(\hat{J}-\hat{J}_{res})^2 + O(\epsilon^2)\Rightarrow\\
-	%---------				 
-	% 1st term			
-			=&	\left[(\bar{\omega}n_i-m_i\Omega )\hat{J}_{res} + n_i^k\hat{J}_{res}^k +V_icos\hat{\theta} \right]+ 
-	% 2nd term 
-			   \left[ (\bar{\omega}-m_i\Omega) + kn_i^k\hat{J}_{res}^{k-1}\right]( \hat{J}-\hat{J}_{res}) + \\
-	% 3rd term 
-			&\text{\hspace{2cm}} +\left[  k(k-1)\hat{J}_{res}^{k-1} \right](\hat{J}-\hat{J}_{res})^2 \Rightarrow\\
-			=& \textcolor{red}{n_i^k\hat{J}_{res}^{k}}+V_icos\hat{\theta} +
-			 	\textcolor{green}{(\bar{\omega}n_i-m_i\Omega)\hat{J}}+ 
-			 \textcolor{green}{kn_i^k\hat{J}_{res}^{k-1}\hat{J}}-\textcolor{red}{kn_i^k\hat{J}_{res}^k}
-			+ 1/2k(k-1)n_i^k\hat{J}_{res}^{k-2}\hat{J}^2+\\
-			&\text{\hspace{2cm}} +\textcolor{red}{1/2k(k-1)n_i^k\hat{J}_{res}^k}-\textcolor{green}{k(k-1)n_i^k\hat{J}_{res}^{k-1}\hat{J}}\Rightarrow\\
-			%
-			%
-			=& \left(1-k+\frac{1}{2}k(k-1)\right)n_i^k\hat{J}_{res}^{k} +
-			 \left( \bar{\omega}n_i-m_i\Omega + kn_i^k\hat{J}_{res}^{k-1}-k(k-1)n_i^k\hat{J}_{res}^{k-1}\right)\hat{J} +
-			  \frac{1}{2}k(k-1)n_i^k\hat{J}_{res}^{k-2} \hat{J}^2+\\
-			&\text{\hspace{2cm}} +V_icos\hat{\theta}	 \numberthis
-		\end{align*} 
+	If we expand our Hamiltonian (\ref{eq2.14}) around $\hat{J}_{res}$, with $\Delta \hat{J} = \hat{J} - \hat{J}_{res}$, we have 
+\begin{align}\label{eq2.17}
+	\hat{H}\simeq&  \hat{H}(\hat{J}_{res}) + 
+					\cancel{\left. \pdv{\hat{H}}{\hat{J}}\right|_{\hat{J}_{res}}}\Delta\hat{J} +
+					 \left. \pdv[order=2]{\hat{H}}{\hat{J}}\right|_{\hat{J}_{res}}(\Delta\hat{J})^2 + O(\epsilon^2)\xRightarrow{\pdv{\theta}{t}|_{res}=0=\pdv{\hat{H}}{\hat{J}}|_{res}}\nonumber\\
+					 =& \left[(\bar{\omega}n_i-m_i\Omega )\hat{J}_{res} + n_i^k\hat{J}_{res}^k +V_icos\hat{\theta} \right]+ 
+					 \frac{1}{2}k(k-1)\hat{J}_{res}(\Delta\hat{J})^2\Rightarrow\nonumber\\
+					=& V_i cos\hat{\theta} + \frac{1}{2}k(k-1)\hat{J}_{res}(\Delta\hat{J})^2
+						+\underbrace{\left[(\bar{\omega}n_i-m_i\Omega )\hat{J}_{res} + n_i^k\hat{J}_{res}^k \right]}_{constant}
+\end{align}
+
+%		\begin{align*}\label{eq2.17}
+%			\hat{H}\simeq&  \hat{H}(\hat{J}_{res}) + 
+%					\left. \pdv{\hat{H}}{\hat{J}}\right|_{\hat{J}_{res}}(\hat{J}-\hat{J}_{res}) +
+%					 \left. \pdv[order=2]{\hat{H}}{\hat{J}}\right|_{\hat{J}_{res}}(\hat{J}-\hat{J}_{res})^2 + O(\epsilon^2)\Rightarrow\\
+%	%---------				 
+%	% 1st term			
+%			=&	\left[(\bar{\omega}n_i-m_i\Omega )\hat{J}_{res} + n_i^k\hat{J}_{res}^k +V_icos\hat{\theta} \right]+ 
+%	% 2nd term 
+%			   \left[ (\bar{\omega}-m_i\Omega) + kn_i^k\hat{J}_{res}^{k-1}\right]( \hat{J}-\hat{J}_{res}) + \\
+%	% 3rd term 
+%			&\text{\hspace{2cm}} +\left[  k(k-1)\hat{J}_{res}^{k-1} \right](\hat{J}-\hat{J}_{res})^2 \Rightarrow\\
+%			=& \textcolor{red}{n_i^k\hat{J}_{res}^{k}}+V_icos\hat{\theta} +
+%			 	\textcolor{green}{(\bar{\omega}n_i-m_i\Omega)\hat{J}}+ 
+%			 \textcolor{green}{kn_i^k\hat{J}_{res}^{k-1}\hat{J}}-\textcolor{red}{kn_i^k\hat{J}_{res}^k}
+%			+ 1/2k(k-1)n_i^k\hat{J}_{res}^{k-2}\hat{J}^2+\\
+%			&\text{\hspace{2cm}} +\textcolor{red}{1/2k(k-1)n_i^k\hat{J}_{res}^k}-\textcolor{green}{k(k-1)n_i^k\hat{J}_{res}^{k-1}\hat{J}}\Rightarrow\\
+%			%
+%			%
+%			=& \left(1-k+\frac{1}{2}k(k-1)\right)n_i^k\hat{J}_{res}^{k} +
+%			 \left( \bar{\omega}n_i-m_i\Omega + kn_i^k\hat{J}_{res}^{k-1}-k(k-1)n_i^k\hat{J}_{res}^{k-1}\right)\hat{J} +
+%			  \frac{1}{2}k(k-1)n_i^k\hat{J}_{res}^{k-2} \hat{J}^2+\\
+%			&\text{\hspace{2cm}} +V_icos\hat{\theta}	 \numberthis
+%		\end{align*} 
+
+The dynamics of the system won't depend on the constant term of the Hamiltonian, since the equations of motion contain the derivative of the Hamiltonian. So, we can see that the Hamiltonian near the resonance regions is similar to the Hamiltonian of a non-linear pendulum $H_{nlp}(\theta,J)= Acos\theta + B J^2$.
 
 
 %
@@ -214,7 +226,7 @@ Where $S_1$ is the same as the one we calculated (\ref{eq2.6}) for the full Hami
 		\begin{align*}\label{eq2.19}
 			\left.\odv{I}{J}\right|_{resonances} = 0 \numberthis
 		\end{align*}
-Since the conditions for the resonances are given by (\ref{eq2.7}), the condition for vanishing the unwanted term from $I(\bar{J})$ is 
+Since the conditions for the resonances are given by (\ref{eq2.7}), the condition for eliminating the unwanted term from $I(\bar{J})$ is 
 	\begin{align*}\label{eq2.20}
 		\odv{I}{J} =& \prod_{i=1,2}C_i\left(m_i\Omega + n_i(\bar{\omega}+kJ^{k-1})\right)\Rightarrow\\
 		            =&C_1C_2\left(m_1\Omega + n_1(\bar{\omega}+kJ^{k-1})\right)\left(m_2\Omega + n_2(\bar{\omega}+kJ^{k-1})\right) \Rightarrow\\ 
