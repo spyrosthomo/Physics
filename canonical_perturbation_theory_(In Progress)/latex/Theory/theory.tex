@@ -2,9 +2,8 @@
 %\addcontentsline{toc}{chapter}{Theoretical Introduction}
 
 
-Canonical Perturbation Theory (CPT) is the theory which helps us understand how perturbations affect the dynamics of a system which is described from an integrable Hamiltonian. So, if we have a certain Hamiltonian which, after a Canonical Transformation, can be broken into a fully integrable part and a non-integrable parte, we can apply CPT and predict how the latter changes the dynamics of the initial system. 
-	\textcolor{red}{MORE ...}
-
+Canonical Perturbation Theory (CPT) is the theory which helps us understand how perturbations affect the dynamics of a system which is described from an integrable Hamiltonian. So, if we have a certain Hamiltonian which, after a Canonical Transformation, can be broken into a fully integrable part and a non-integrable part, we can apply CPT and predict how the latter changes the dynamics of the initial system. 
+	
 Let's assume that we have an autonomous Hamiltonian $H_0'(\bm{q},\bm{p})$ which fully describes a system via the Hamilton's equations of motion 
 		\begin{subequations}\label{eq1}
 			\begin{alignat}{2}
@@ -14,8 +13,8 @@ Let's assume that we have an autonomous Hamiltonian $H_0'(\bm{q},\bm{p})$ which 
 	\end{subequations}
 		
 		
- 	If we can apply a Canonical Transformation on it which maintains the Hamiltonian character of the system, then we call it a Canonical Transformation. 
- 	Let's further assume that there are as many constants of motion as degrees of freedom, 2n. This means that exists a Canonical Transformation, $(\bm{q},\bm{p})\rightarrow (\bm{J},\bm{\theta})$, which makes the new generalized position ignorable. That is, the transformed Hamiltonian is not dependent on it, thus $H_0 = H_0(\bm{J})$. These new Canonical Variables are called \textit{Action-Angle Variables}. The system can now be written as 
+ 	If we can apply a transformation which maintains the Hamiltonian character of the system, then we call it a \textit{Canonical Transformation}. 
+ 	Let's further assume that there are as many constants of motion as degrees of freedom, 2n. This means that exists a Canonical Transformation, $(\bm{q},\bm{p})\rightarrow (\bm{J},\bm{\theta})$ and $H_0'\rightarrow H_0$, which makes the new generalized position ignorable. That is, the transformed Hamiltonian is not dependent on it, thus $H_0 = H_0(\bm{J})$. These new Canonical Variables are called \textit{Action-Angle Variables}. The system can now be written as 
  	\begin{subequations}\label{eq2}
 		\begin{alignat}{2} 
 			\dot{\theta_i} =& \pdv{H_0(\bm{J})}{J_i} \\ 
@@ -23,7 +22,7 @@ Let's assume that we have an autonomous Hamiltonian $H_0'(\bm{q},\bm{p})$ which 
 		\end{alignat} 
 	\end{subequations}
 	
-	From the second equation we can easily obtain that the \textit{Action} is constant for all degrees of freedom, $J_i =\alpha_i$. \textcolor{red}{From the first, we can deduce the the derivative of the \textit{Angle} is constant,} thus the solution of the system is 
+	From the second equation we can easily infer that the \textit{Action} is constant for all degrees of freedom, $J_i =\alpha_i$. From the first, we can deduce the the derivative of the \textit{Angle} is constant, thus the solution of the system is 
 	\begin{subequations}\label{eq3}
 		\begin{alignat}{2}
 			\theta_i =& \omega_{0,i} \cdot t + \theta_0 \\ 
@@ -31,11 +30,11 @@ Let's assume that we have an autonomous Hamiltonian $H_0'(\bm{q},\bm{p})$ which 
 		\end{alignat}
 	\end{subequations}
  	where $\omega_{0,i} = \partial(H_0(\bm{J})/\partial{J_i}$	
-	Now, we can see that the new variable $\bm{\theta}$ is named \textit{Angle} on purpose since, from equation (1a), it can be interpreted as a periodic phase with different frequency for each degree of freedom ´$\bm{\omega} = (\omega_{0,1},..,\omega_{o,n})$.
+	Now, we can see that the new variable $\bm{\theta}$ is named \textit{Angle} on purpose, since from equation (1a), it can be interpreted as a periodic phase with different frequency for each degree of freedom ´$\bm{\omega} = (\omega_{0,1},..,\omega_{o,n})$.
 	If we transform back to the initial variables $(\bm{J},\bm{\theta})\rightarrow(\bm{q},\bm{p})$ we have the solution of the initial system.
 	
 	However convenient it seems, the above case is, firstly extremely rare and secondly extremely sensitive. Say for example that the Hamiltonian models a real mechanical system. That system is naturally prone to imperfections which will destroy its integrable character and as a result we will not be able to apply the above method of Canonical Transformation to Action-Angle variables in order to find the solution. Or we may want to increase our system's energy, so we have to impose an external periodic stimulation.
-	All these doesn't mean that we are unable to study the new \textit{perturbed} system.
+	All these don't mean that we are unable to study the new \textit{perturbed} system.
 	
 	The new system is now described by a Hamiltonian $H'(\bm{q},\bm{p},t)$. Due to the fact that it deviates only a little from the initial one, it can be written as 
 		\begin{equation}\label{eq4}
@@ -47,7 +46,7 @@ Let's assume that we have an autonomous Hamiltonian $H_0'(\bm{q},\bm{p})$ which 
 			H(\bm{J},\bm{\theta},t) = H_0(\bm{J}) + \epsilon H_1(\bm{J},\bm{\theta},t)
 		\end{equation}
 	
-	Our goal now is to transform the new Hamiltonian in order to push the $\bm{\theta},t$ dependence to higher order $\epsilon ^2$. In that way, we will have an approximately integrable Hamiltonian to the first order and we will be able to solve it. 
+	Our goal now is to transform the new Hamiltonian in order to push the $\bm{\theta},t$ dependence to higher order $\epsilon ^2$. In that way, we will have an approximately integrable Hamiltonian up to first order and we will be able to solve it. 
 	
 	\section{Canonical Transformation}
 	
@@ -212,4 +211,4 @@ If we had only the integrable part, then the dynamics of the systems evolve on a
 			\label{fig1}
 		\end{figure}
 		
-	These were about the integrable system. If we turn on the non-integrable part,
+	These were about the integrable system. If we turn on the non-integrable part, as we will see at the numerical study of the Hamiltonian, there are regions that stay unaffected by it and other regions that are heavily distorted.

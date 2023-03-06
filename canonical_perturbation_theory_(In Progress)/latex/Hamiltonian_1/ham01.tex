@@ -46,18 +46,19 @@ Similarly, we write $S_1$ as the following sum
 If we substitute (\ref{eq2.4}) and (\ref{eq2.6}) into the condition (\ref{eq16}), we have 
 	\begin{align*}
 		H_1 + \pdv{S_1}{\theta} \omega_0(\bm{\bar{J}})+ \pdv{S_1}{t} = 0 \Rightarrow\\
-		\sum_i \left( V_icos(n_i\theta-m_i\Omega t) -m_i\Omega S_{1,i}cos(n_i\theta-m_i\Omega t)  -n_iS_{1,i}cos(n_i\theta-m_i\Omega t)  \cdot \omega_0 \right) = 0 \Rightarrow \\ 
-		\sum_i\left( V_i - m_i\Omega S_{1,i}-n_iS_{1,i}\omega_0\right)cos(n_i\theta-m_i\Omega t) =0 \Rightarrow\\ 
+		%
+		\sum_i \left( V_icos(n_i\theta-m_i\Omega t) + m_i\Omega S_{1,i}cos(n_i\theta-m_i\Omega t)  -n_iS_{1,i}cos(n_i\theta-m_i\Omega t)  \cdot \omega_0 \right) = 0 \Rightarrow \\ 
+		\sum_i\left( V_i + m_i\Omega S_{1,i}-n_iS_{1,i}\omega_0\right)cos(n_i\theta-m_i\Omega t) =0 \Rightarrow\\ 
 	\end{align*}
 We want it to hold $\forall i=\{1,2\}$
 	\begin{align*}%\label{eq2.7}
-		S_{1,i} = \frac{V_i}{m_i\Omega + n_i(\bar{\omega}+kJ^{k-1})}, i=1,2
+		S_{1,i} = \frac{V_i}{-m_i\Omega + n_i(\bar{\omega}+kJ^{k-1})}, i=1,2
 	\end{align*}
 	%
 So, for each term of the expansion, we have resonance for the values for which the denominator is zero 
 	\begin{align}\label{eq2.7}
-		m_i\Omega + n_i(\bar{\omega}+kJ^{k-1}) = 0\Rightarrow\nonumber\\
-		J_{res,i}^{k-1} = - \frac{m_i\Omega + n_i\bar{\omega}}{kn_i}
+		-m_i\Omega + n_i(\bar{\omega}+kJ^{k-1}) = 0\Rightarrow\nonumber\\
+		J_{res,i}^{k-1} =  \frac{m_i\Omega - n_i\bar{\omega}}{kn_i}
 	\end{align}
 %
 %
@@ -228,52 +229,22 @@ The dynamics of the system won't depend on the constant term of the Hamiltonian,
 		\end{align*}
 Since the conditions for the resonances are given by (\ref{eq2.7}), the condition for eliminating the unwanted term from $I(\bar{J})$ is 
 	\begin{align*}\label{eq2.20}
-		\odv{I}{J} =& \prod_{i=1,2}C_i\left(m_i\Omega + n_i(\bar{\omega}+kJ^{k-1})\right)\Rightarrow\\
-		            =&C_1C_2\left(m_1\Omega + n_1(\bar{\omega}+kJ^{k-1})\right)\left(m_2\Omega + n_2(\bar{\omega}+kJ^{k-1})\right) \Rightarrow\\ 
-		            =&C_1C_2 \left( (m_1\Omega + n_1\bar{\omega})(m_2\Omega + n_2\bar{\omega})+  \left[n_1(m_2\Omega + n_2\bar{\omega}))+ n_2(m_1\Omega + n_1 \bar{\omega})\right]J^{k-1}
+		\odv{I}{J} =& \prod_{i=1,2}C_i\left(m_i\Omega - n_i(\bar{\omega}+kJ^{k-1})\right)\Rightarrow\\
+		            =&C_1C_2\left(m_1\Omega - n_1(\bar{\omega}+kJ^{k-1})\right)\left(m_2\Omega - n_2(\bar{\omega}+kJ^{k-1})\right) \Rightarrow\\ 
+		            =&C_1C_2 \left( (m_1\Omega - n_1\bar{\omega})(m_2\Omega - n_2\bar{\omega})+  \left[n_1(m_2\Omega - n_2\bar{\omega}))+ n_2(m_1\Omega - n_1 \bar{\omega})\right]J^{k-1}
 		            +
-		         n_1n_1J^{2k-2}    \right) \numberthis
+		         n_1n_2k^2J^{2k-2}    \right) \numberthis
 	\end{align*}
 	%
-	So, we have that 
+	So, from (\ref{eq2.18}), if we integrate (\ref{eq2.20}), we have that 
 	\begin{align*}\label{eq2.21}
-		I(J) = C_1C_2 \left( (m_1\Omega + n_1\bar{\omega})(m_2\Omega + n_2\bar{\omega})J + \left[n_1(m_2\Omega + n_2\bar{\omega}))+ n_2(m_1\Omega + n_1 \bar{\omega})\right]\frac{J^{k}}{k}
+		I(J) = C_1C_2 \left( (m_1\Omega - n_1\bar{\omega})(m_2\Omega - n_2\bar{\omega})J + \left[n_1(m_2\Omega - n_2\bar{\omega})+ n_2(m_1\Omega - n_1 \bar{\omega})\right]\frac{J^{k}}{k}
 		            +
-		         n_1n_1\frac{J^{2k-2}}{2k-1}    \right) \numberthis
+		         n_1n_2k^2\frac{J^{2k-1}}{2k-1}    \right) - \\
+	\hspace{1cm}- C_1C_2\left(m_1\Omega - n_1(\bar{\omega}+kJ^{k-1})\right)\left(m_2\Omega - n_2(\bar{\omega}+kJ^{k-1})\right)\cdot \\ 
+	\cdot\left( \frac{V_1n_1}{m_1\Omega - n_1(\bar{\omega}+kJ^{k-1})}sin(n_1\theta-m_1\Omega t)+\frac{V_2n_2}{m_2\Omega - n_2(\bar{\omega}+kJ^{k-1})} sin(n_2\theta-m_2\Omega t)\right)\numberthis
 	\end{align*}		
 %
-If we combline (\ref{eq2.21}) \& (\ref{eq2.20}) with (\ref{eq2.18}) we obtain the new constant of motion which does not go to infinity at the resonances.
+%If we combline (\ref{eq2.21}) \& (\ref{eq2.20}) with (\ref{eq2.18}) we obtain the %new constant of motion which does not go to infinity at the resonances.
 
 
-%
-\textcolor{red}{
-\line(1,0){450}\\
-\begin{center}
-	\textbf{QUESTION 5}
-\end{center}
-\line(1,0){450}\\
-}
-%
-%
-%========================================================================
-% 5ρδ Q
-%========================================================================
-%
-%
-
-
-We will now study numerically the Hamiltonian (\ref{eq2.1}) and we will compare the numerical with the analytical results. In order to do that, we will construct its Poincare Map. In order to do that, we will have to solve numerically the following Hamilton's equations of motion
-	\begin{align*}
-	\left\{
-		\begin{matrix}
-			\dot{\theta} =& \pdv{H}{J     }  \vspace{0.3cm}\\
-			\dot{J     } =& -\pdv{H}{\theta}
-		\end{matrix}  \right. \Rightarrow \\
-	\end{align*}\vspace{-1.2cm}
-	\begin{align*}
-		\left\{
-		\begin{matrix}
-			\dot{\theta} =& \bar{\omega} + kJ^{k-1} \\
-			\dot{J     } =& V_1n_1sin(n_1\theta-m_1\Omega t) + V_2n_2sin(n_2\theta-m_2\Omega t)
-		\end{matrix}  \right.
-	\end{align*}
