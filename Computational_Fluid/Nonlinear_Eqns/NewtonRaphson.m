@@ -1,7 +1,11 @@
 # Newton's method for solving non-linear equation
 function x = NewtonRaphson(x0, func, a, b, tol, Nmax) 
   % add path to derivative 
+<<<<<<< HEAD
   addpath("../../Derivatives")
+=======
+  addpath("/media/sthomopo/DATA/MATLAB/1_SCRIPTS/Computational_Fluid/Derivatives")
+>>>>>>> 1491a078b435a13e987046c24c352040221f7fe8
   % Check inputs 
   if ( nargin < 6 )
     Nmax = 1e+3;

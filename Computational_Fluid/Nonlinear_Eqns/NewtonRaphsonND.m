@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 function x =  NewtonRaphsonND(x0, func, a, b, tol, Nmax)
   % add path to derivative 
   addpath("../../Derivatives")
+=======
+function NewtonRaphsonND(x0, func, a, b, tol, Nmax)
+  % add path to derivative 
+  addpath("/media/sthomopo/DATA/MATLAB/1_SCRIPTS/Computational_Fluid/Derivatives")
+>>>>>>> 1491a078b435a13e987046c24c352040221f7fe8
   # Check inputs 
     # quantitative
   if (nargin < 6)
@@ -10,11 +16,19 @@ function x =  NewtonRaphsonND(x0, func, a, b, tol, Nmax)
     tol = 1e-5; Nmax = 1e+05; 
   endif
   if (nargin < 4)
+<<<<<<< HEAD
     fprintf("# !!! ERROR: Number of inputs < 4.\n") 
     return
   endif 
     # qualitative 
   if ( (size(a)!=size(b)) || (size(a)!=size(x0)) || (size(a)!=size(func(x0))) )
+=======
+    fprintf("# !!! ERROR: Number of inputs < 4.  ;')\n") 
+    return
+  endif 
+    # qualitative 
+  if (size(a)!=size(b) || (size(a)!=size(x0)) || (size(a)!=size(func(x0))) )
+>>>>>>> 1491a078b435a13e987046c24c352040221f7fe8
     fprintf("# !!! ERRROR:  length of a, b, x0 should be the same.\n")
     return 
   endif
