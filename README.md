@@ -1,2 +1,2 @@
 # Physics
- Various physics scripts.
+ Various physics projects.
